@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #fff;
-  background-image: url("images/bg-intro-desktop.png");
+  background-image: url("https://user-images.githubusercontent.com/72313013/120899202-b3268580-c658-11eb-943a-cdbffc7e584a.png");
   background-color: #FF7A7A;
 }
 
@@ -121,7 +121,7 @@ input {
 /* 375px */
 @media only screen and (max-width: 500px) {
   body {
-    background-image: url("images/bg-intro-mobile.png");
+    background-image: url("https://user-images.githubusercontent.com/72313013/120899228-d6513500-c658-11eb-8920-21cfc14b2bfe.png");
     text-align: center;
   }
 
