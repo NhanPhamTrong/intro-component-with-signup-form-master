@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #fff;
-  background-image: image("/images/bg-intro-desktop.png");
+  background-image: url("images/bg-intro-desktop.png");
   background-color: #FF7A7A;
 }
 
@@ -121,7 +121,7 @@ input {
 /* 375px */
 @media only screen and (max-width: 500px) {
   body {
-    background-image: url("file:///C:/Users/Pham%20Trong%20Nhan/Desktop/intro-component-with-signup-form-master/images/bg-intro-mobile.png");
+    background-image: url("images/bg-intro-mobile.png");
     text-align: center;
   }
 
