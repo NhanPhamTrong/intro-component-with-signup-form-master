@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-image: url("file:///C:/Users/Pham%20Trong%20Nhan/Desktop/intro-component-with-signup-form-master/images/bg-intro-desktop.png");
+  background-color: #FF7A7A;
+}
+
+h1 {
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+span {
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  padding: 20px 0 20px 35px;
+  margin: 20px 0 0;
+  border-radius: 10px;
+  border-color: #B9B6D3;
+  border-style: solid;
+  color: #3E3C49;
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+/* Intro */
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Sign In Site */
+
+.price {
+  padding: 25px 0;
+  margin-bottom: 25px;
+  background-color: #6055A5;
+  border-radius: 10px;
+  box-shadow: 0 10px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.sign-in-site {
+  padding: 20px 40px 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 4px rgba(0, 0, 0, 0.4);
+}
+
+.new-placeholder::placeholder {
+  color: #FF7A7A;
+}
+
+.wrong-input {
+  border-color: #FF7A7A;
+}
+
+.error-space {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: #FF7A7A;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.svg-error {
+  position: relative;
+  bottom: 45px;
+  left: 405px;
+}
+
+.claim-button {
+  padding: 20px 0;
+  margin: 20px 0 15px;
+  background-color: #38CC8C;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+.note {
+  color: #B9B6D3;
+  font-size: 10px;
+  text-align: center;
+}
+
+.note span {
+  color: #FF7A7A;
+}
+
+/* Attribution */
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3E52A3;
+}
+
+/* 375px */
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url("file:///C:/Users/Pham%20Trong%20Nhan/Desktop/intro-component-with-signup-form-master/images/bg-intro-mobile.png");
+    text-align: center;
+  }
+
+  h1 {
+    margin: 90px 0 25px;
+  }
+
+  #intro p {
+    padding: 0 70px;
+    margin: 0 0 65px;
+  }
+
+  .price p {
+    padding: 0 120px;
+  }
+
+  .svg-error {
+    position: relative;
+    bottom: 45px;
+    left: 320px;
+  }
+}
