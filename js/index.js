@@ -14,10 +14,10 @@ for (var i = 0; i < needInput.length; i++) {
 
 function ChangeScreenWidth() {
   if ($(window).width() <= 375) {
-    $(".container.p-5").addClass("py-5 px-4").removeClass("p-5");
-    $(".col.p-5").addClass("p-2").removeClass("p-5");
-    $("#form").addClass("p-0").removeClass("p-4");
-    $(".form-control").removeClass("px-5");
+    $(".container.p-5").addClass("py-5 px-4").removeClass("p-5"); // Change to fit design (unnecessary)
+    $(".col.p-5").addClass("p-2").removeClass("p-5"); // Change to fit design (unnecessary)
+    $("#form").addClass("p-0").removeClass("p-4"); // Change form's padding
+    $(".form-control").removeClass("px-5"); // Change input's padding
   }
   else {
     $(".container.py-5.px-4").addClass("p-5").removeClass("py-5 px-4");
