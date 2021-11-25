@@ -1,0 +1,129 @@
+:root {
+  --attribution-link-color: hsl(228, 45%, 44%);
+  --body-background-color: rgb(255, 122, 122);
+  --claim-button-background-color: rgb(56, 204, 140);
+  --error-color: rgb(255, 122, 122);
+  --input-border-color: rgb(62, 60, 73);
+  --right-heading-background-color: rgb(96, 85, 165);
+  --right-form-background-color: rgb(255, 255, 255);
+  --shadow-color: rgba(0, 0, 0, 0.125);
+  --word-color-1: rgb(255, 255, 255);
+  --word-color-2: rgb(255, 122, 122);
+  --word-color-3: rgb(185, 182, 211);
+}
+
+body {
+  background: url("https://www.linkpicture.com/q/bg-intro-desktop_1.png") var(--body-background-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+#left {
+  color: var(--word-color-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  padding-right: 25px;
+  font-weight: 700;
+}
+
+#heading {
+  background: var(--right-heading-background-color);
+  border-radius: 10px;
+  box-shadow: 0 10px 0 0 var(--shadow-color);
+  color: var(--word-color-1);
+  text-align: center;
+}
+
+#heading span {
+  font-weight: 700;
+}
+
+#form {
+  background: var(--right-form-background-color);
+  border-radius: 10px;
+  box-shadow: 0 10px 0 0 var(--shadow-color);
+}
+
+.form-control {
+  background-color: transparent;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 0.25px var(--input-border-color);
+}
+
+.email-form::placeholder {
+  color: var(--error-color);
+}
+
+.form-control.error {
+  background-image: url("https://www.linkpicture.com/q/icon-error.svg");
+  background-position: right 25px center;
+  background-repeat: no-repeat;
+  border-color: var(--error-color);
+  border-width: 3px;
+}
+
+.form-text {
+  color: var(--word-color-2);
+  font-weight: 500;
+  text-align: right;
+}
+
+#claim-button {
+  background: var(--claim-button-background-color);
+  border-color: transparent;
+  box-shadow: 0 5px 0 0 rgb(40, 157, 107);
+  color: var(--word-color-1);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#claim-note {
+  margin-top: 30px;
+  color: var(--word-color-3);
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#claim-note a {
+  color: var(--word-color-2);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--attribution-link-color);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background: url("https://www.linkpicture.com/q/bg-intro-mobile.png") var(--body-background-color);
+  }
+
+  h1 {
+    padding-right: 0;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  #left p {
+    text-align: center;
+  }
+
+  #claim-note {
+    font-size: 13px;
+  }
+}
